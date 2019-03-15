@@ -20,11 +20,18 @@
 # 출력
 # 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 
-iter = int(input())
-for i in range(0, iter):
-    a, b = map(int, input().split())
-    sum = a+b
-    print(sum)
-    
+# iter = int(input())
+# for i in range(0, iter):
+#     a, b = map(int, input().split())
+#     sum = a+b
+#     print(sum)
 
-    
+# 더욱 빠른 실행을 원한다면...
+
+import sys
+
+T = sys.stdin.readline()
+
+for Repeat in range(0, int(T)):
+    num = sys.stdin.readline().split()
+    print(int(num[0]) + int(num[1]))
