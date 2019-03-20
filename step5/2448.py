@@ -7,6 +7,7 @@
 # 출력
 # 첫째 줄부터 N번째 줄까지 별을 출력한다.
 
+# import math 통해 log를 사용해야 한다.
 n = int(input())
 
 
