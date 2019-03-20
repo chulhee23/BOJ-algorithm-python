@@ -28,4 +28,4 @@ sortedTime = sorted(time.items(), key = operator.itemgetter(1))
 print(sortedTime)
 
 # value로 정렬 끝.
-이제 시간대별 안 겹치게 넣어줘야함.
+# 이제 시간대별 안 겹치게 넣어줘야함.
