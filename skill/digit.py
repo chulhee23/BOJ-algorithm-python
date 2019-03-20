@@ -5,3 +5,7 @@ hundreds = x // 100 %10
 tens = x // 10 % 10
 units = x % 10
 
+print(thousands)
+print(hundreds)
+print(tens)
+print(units)
