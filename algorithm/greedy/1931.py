@@ -6,26 +6,23 @@
 
 # 출력
 # 첫째 줄에 최대 사용할 수 있는 회의 수를 출력하여라.
-import operator
+
+# idea : 일찍 회의 끝나는 순서로 정렬
 
 n = int(input())
-
-hour=[]
-time = {}
-
+time = []
 for i in range(n):
-    hour.append(list(map(int, input().split())))
+    a,b = map(int,input().split())
+    # 끝나는 시간 기준으로 정렬하기 위해 b를 먼저 넣어줌.
+    # 시작 시간도 이른 순서로 정렬됨을 확인함.
+    time.append((b,a))
+time.sort()
 
-for i in range(n):
-    last_time = hour[i][1]-hour[i][0]
-    time[str(str(hour[i][0])+'~'+str(hour[i][1]))] = last_time
-
-
-print(hour)
-print(time)
-
-sortedTime = sorted(time.items(), key = operator.itemgetter(1))
-print(sortedTime)
-
-# value로 정렬 끝.
-# 이제 시간대별 안 겹치게 넣어줘야함.
+count=0
+temp =0
+print(temp)
+for end, start in time:
+    if temp <= start :
+        count += 1
+        temp = end
+print(count)
