@@ -8,13 +8,22 @@
 
 # 출력
 # 조건에 따라 정렬하여 단어들을 출력한다. 단, 같은 단어가 여러 번 입력된 경우에는 한 번씩만 출력한다.
-import operator
-n = int(input())
-word={}
-for i in range(n):
-    a= input()
-    word[a] = len(a)
 
-sortedWordList = sorted(word.items(), key=operator.itemgetter(1))
-for i in range(len(sortedWordList)):
-    print(sortedWordList[i][0])
+
+    
+n=int(input())
+word=[]
+
+for i in range(n):
+    a=input()
+    word.append(a)
+
+word = list(set(word))
+
+sortedWord=[]
+for item in word:
+    sortedWord.append((len(item),item))
+
+sortedWord.sort()
+for i in sortedWord:
+    print(i[1])
