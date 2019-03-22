@@ -17,3 +17,36 @@
 
 # 출력
 # 각 테스트 케이스에 대해서 한 줄에 m개의 정수를 출력해야 한다. i번째 출력하는 수는 i번째로 영화를 볼 때 그 영화의 위에 있었던 DVD의 개수이다. 상근이는 매번 영화를 볼 때마다 본 영화 DVD를 가장 위에 놓는다.
+
+n = int(input())
+movieList=[]
+
+watch=[]
+
+real_answer=[]
+for a in range(n):
+    answer=[]
+    tempList = []
+
+    movie_number, num = map(int, input().split())
+    
+    for i in range(movie_number):
+        tempList.append(i+1)
+
+    movieList.append(list(tempList))
+    watch.append(list(map(int, input().split()))) # 볼 영화들을 리스트로 생성
+    for title in watch[a]:
+        for movie in movieList[a]:
+            if movie==title:
+                temp = movieList[a].index(movie)
+                answer.append(temp)
+                movieList[a].pop(temp)
+                movieList[a].insert(0, movie)
+
+    real_answer.append(answer)
+
+# 마지막 답을 출력해줘야 한다.
+for ans in real_answer:
+    for i in ans:
+        print(i, end=' ')
+    print()
