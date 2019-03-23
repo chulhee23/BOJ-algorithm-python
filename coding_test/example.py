@@ -38,6 +38,3 @@ for i in range(0,row):
 
 for item in answer:
     print(item)
-
-
-# good!
