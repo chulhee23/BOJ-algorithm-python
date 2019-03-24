@@ -6,5 +6,7 @@
 <li>python의 collections의 deque 사용해야 에러가 나지 않는다.</li>
 
 </ul>
-<h2>donsworkout 참고</h2>
+
+<hr>
+<p>donsworkout 참고<p>
 
