@@ -9,3 +9,20 @@
 # 출력
 # 수빈이가 동생을 찾는 가장 빠른 시간을 출력한다.
 
+# 개인적인 생각으로는 bfs라는 개념을 떠올리기 쉬운 문제!!
+n, k =map(int, input().split())
+move=0
+
+def t(n):
+    return abs(2*n-k)
+
+def b(n):
+    return abs(n-1-k)
+
+def f(n):
+    return abs(n+1-k)
+
+
+
+
+print(move)
