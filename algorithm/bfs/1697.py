@@ -14,15 +14,11 @@ n, k =map(int, input().split())
 move=0
 
 def t(n):
-    return abs(2*n-k)
+    return abs(2*n)
 
 def b(n):
-    return abs(n-1-k)
+    return abs(n-1)
 
 def f(n):
-    return abs(n+1-k)
+    return abs(n+1)
 
-
-
-
-print(move)
