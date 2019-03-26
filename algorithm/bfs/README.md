@@ -10,3 +10,17 @@
 <hr>
 <p>donsworkout 참고<p>
 
+<h1>큐의 구조 </h1>
+<h2>FIFO(선입선출) 구조</h1>
+
+<p>first ->_ _ _ _ _ <-rear </p>
+
+<p>
+Enqueue : 큐 맨 뒤에 어떠한 요소를 추가
+
+Dequeue : 큐 맨 앞쪽의 요소를 삭제
+
+front : 큐의 맨 앞의 위치(인덱스)
+
+rear : 큐의 맨 뒤의 위치(인덱스)
+</p>
