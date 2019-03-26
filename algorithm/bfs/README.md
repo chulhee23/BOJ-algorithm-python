@@ -48,8 +48,6 @@ print(queue)
 
 queue.pop()
 queue.popleft()
-queue.extend()
-queue.extendleft()
 
 print(queue)
 
