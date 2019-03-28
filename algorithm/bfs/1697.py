@@ -13,14 +13,6 @@ from collections import deque
 n, k =map(int, input().split())
 move=0
 
-def t(n):
-    return abs(2*n)
-
-def b(n):
-    return abs(n-1)
-
-def f(n):
-    return abs(n+1)
-
 # 처음에 든 생각은 각각의 단계에서 k와 가장 가까워진다면? 가능하지 않을까??라는 생각이였는데....
 # bfs문제는 무조건 큐를 사용한다고 생각하자
+
