@@ -3,4 +3,4 @@ https://www.acmicpc.net/step
 
 파이썬으로 작성중입니다.
 <br>
-삼성 sw 아카데미 공부중
+19년 300문제 풀이 목표
