@@ -8,7 +8,3 @@ b = 10**digit
 
 ans=[0,9,17]
 
-for i in range(3,digit+1):
-    ans.append((ans[i-1]-3)*2 + 4)
-
-print(ans[digit])
