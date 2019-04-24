@@ -1,5 +1,4 @@
 import sys
-input = sys.stdin.readline
 
 n= int(sys.stdin.readline())
 
@@ -8,7 +7,8 @@ temp=[0]*10
 x=1
 while(x<n):
     for i,v in enumerate(arr):
-        temp[i] = sum(arr[i:])
+        temp[i] = sum(arr[i:])%10007
+        # 런타임에러 해결위해서 10007로 미리 나눠줌
     arr = temp
     x+=1
 
