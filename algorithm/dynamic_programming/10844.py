@@ -6,7 +6,6 @@ arr = [0,1,1,1,1,1,1,1,1,1]
 temp = [0]*10
 
 n = int(sys.stdin.readline())
-
 x=1
 while( x<n ):
     temp = [0]*10
