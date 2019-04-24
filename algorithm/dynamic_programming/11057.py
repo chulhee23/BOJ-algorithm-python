@@ -8,7 +8,7 @@ x=1
 while(x<n):
     for i,v in enumerate(arr):
         temp[i] = sum(arr[i:])%10007
-        # 런타임에러 해결위해서 10007로 미리 나눠줌
+        # 런타임 에러 해결을 위해 미리 10007로 나눠줬다.
     arr = temp
     x+=1
 
