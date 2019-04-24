@@ -12,4 +12,4 @@ while(x<n):
     arr = temp
     x+=1
 
-print(sum(arr))
+print(sum(arr)%10007)
