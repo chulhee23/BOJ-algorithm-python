@@ -13,10 +13,6 @@ for _ in range(test_cases_number):
 
     # 점화식의 필연성을 고려할 것.
 
-    # print answer form like this way
-    temp=1
-
-    ans.append(temp)
-
+    
 print(matrix)
 print(*ans, end=" ")
