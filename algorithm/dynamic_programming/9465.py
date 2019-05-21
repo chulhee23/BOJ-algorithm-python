@@ -12,4 +12,9 @@ for _ in range(col):
 
 sticker[0].insert(0,0)
 sticker[1].insert(0,0)
-dp=[[0]*col for i in range(2)]
+dp=[[0]*(col+1) for i in range(2)]
+
+for i in range(2,col+1):
+    dp[0][i]=max(dp[1][i-1],dp[1][i-2]) + sticker[0][i]
+    dp[1][i]=max(dp[0][i-1],dp[0][i-2]) + sticker[1][i]
+
