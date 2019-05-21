@@ -1,18 +1,15 @@
 import sys
 input = sys.stdin.readline
-ans=[]
 
+repeat = int(input())
 
-test_cases_number = int(input())
-for _ in range(test_cases_number):
-    matrix = []
-    n = int(input())
-    # create matrix
-    matrix.append(list(map(int, input().split())))
-    matrix.append(list(map(int, input().split())))
+# 1회에 대한 알고리즘
+col = map(int, input().split())
+sticker = []
 
-    # 점화식의 필연성을 고려할 것.
+for _ in range(col):
+    sticker.append(list(map(int, input().split())))
 
-    
-print(matrix)
-print(*ans, end=" ")
+sticker[0].insert(0,0)
+sticker[1].insert(0,0)
+dp=[[0]*col for i in range(2)]
