@@ -17,6 +17,7 @@
 import sys
 input = sys.stdin.readline
 
+# 이런 코드도 ㄱㅊ은데 사실 n 번 반복하는 과정이 전혀 없긴 함. 차이점을 찾아보자.
 n = int(input())
 arr = list(map(int, input().split()))
 d = [0]*n
