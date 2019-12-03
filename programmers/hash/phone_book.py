@@ -11,3 +11,12 @@ def solution(phone_book):
 
     return answer
 solution(["119", "97674223", "1195524421"])
+
+
+def solution2(pb):
+    pb = sorted(pb)
+
+    for p1, p2 in zip(pb, pb[1:]):
+        if p2.startWith(p1):
+            return False
+    return True
